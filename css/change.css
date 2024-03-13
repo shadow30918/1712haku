@@ -1,0 +1,66 @@
+body {
+  font-size: 0;
+  background: url(../img/m_thank.jpg) center top no-repeat;
+  background-size: 100%;
+  background-color: #f9f9f9;
+}
+
+img {width: 100%;}
+
+
+.change-info ,.expired-tips{
+  margin:0 auto;
+  width: 81.25%;
+  padding-top: 127%;
+}
+
+.change-name-title,
+.change-phone-title,
+.change-email-title,
+.change-shop-title {
+  
+  margin-top: 2%;
+}
+
+span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+span:first-child {
+  width: 39.75%;
+}
+
+span:nth-child(2) {
+  width: 60.25%;
+  font-size: 21px;
+  letter-spacing: 2px;
+  color: #666;
+  padding-top: 0.8%;
+}
+
+
+.change-down {
+  margin-top: 12%;
+  
+}
+
+.change-btn,.change-ok-btn , .re-btn {
+  width: 72.91%;
+  border:1px solid #ddd;
+  margin:0 auto;
+}
+
+.change-ok-btn {
+  display: none;
+}
+
+.change-tips {
+  margin:0 auto 5%;
+  width: 72.91%;
+}
+
+
+.resend-btn {
+  margin:10% 0;
+}
