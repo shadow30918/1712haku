@@ -1,0 +1,581 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+
+body {
+  position: relative;
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*background: url("../img/info_bg.png") center bottom no-repeat;
+  background-attachment: fixed;*/
+  -webkit-overflow-scrolling: touch;
+  background-color: #ccc;
+}
+
+#smooth_scroll {
+  height: 100%;
+  overflow-y: auto;
+}
+
+img {width:100%;}
+
+.dt {
+  display:none;
+}
+
+.mb {
+  display:block;
+}
+
+.menu-bar {
+  top:0;
+  z-index:800;
+  position:fixed;
+  height:auto;
+  width:100%;
+  background-color:#a0a0a0;
+}
+
+.menu {
+  cursor: pointer;
+  z-index: 800;
+  font-size:0;
+  top: 0;
+  left: 0;
+  margin:10px;
+  height:auto;
+  width:7%;
+  max-width:50px;
+  display:inline-block;
+}
+
+.menu img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-bg {
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items:center;
+  justify-content: center;
+  display:none;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 32px;
+  height: 34px;
+  cursor: pointer;
+  display: none;
+}
+.close img {
+  width: 100%;
+  height: auto;
+}
+
+.opened {
+  display: block;
+}
+/*
+body .opened {
+  display: flex;
+}*/
+
+.link{
+  font-size: 0;
+  width:60%;
+  margin:0;
+  transform:translateY(0);
+  background-color:transparent;
+}
+
+.link li {
+  display: block;
+  margin-bottom: 15%;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  padding: 3% 0;
+  transition: 0.3s;
+  width: 100%;
+  max-width:960px;
+  /*background-color: #333;*/
+}
+
+.link li img {
+  width:100%;
+  border:0;
+}
+
+.link li a {
+  color:#fff;
+  font-size:24px;
+  text-decoration: none;
+  transition: 0.2s;
+  vertical-align: middle;
+}
+
+.visual {
+  width: 100%;
+}
+
+.fix {
+  position: relative;
+  overflow: hidden;
+}
+
+.visual-img {
+  position: absolute;
+  width: 100%;
+  left:50%;
+  transform: translate(-50%);
+  overflow: hidden;
+  /*opacity: 0.5;
+  -webkit-transition: all 2s ease; 
+  transition: all 2s ease;*/
+}
+
+.visual-img img {
+   width: 100%;
+   opacity: 0.5;
+  -webkit-transition: all 3s ease; /* Safari */
+  transition: all 3s ease;
+}
+
+.visual-content {
+  position: relative;
+  height: 100vh;
+  /*padding-top: 155%;*/
+}
+
+.logo {
+  width:25%;
+  position: absolute;
+  right:0;
+  top:10%;
+  display: none;
+}
+
+.title {
+  position: absolute;
+  bottom:10%;
+  display: none;
+}
+
+.game {
+  position: relative;
+}
+
+.game-img {
+  padding: 5%;
+  width: 90%;
+}
+
+.game-title {
+  width: 100%;
+}
+
+
+
+.info {
+  position: fixed;
+  width:100%;
+  display: block;
+  z-index: 999;
+  top:0;
+  height: 100vh;
+  display: none;
+}
+
+.info-close{
+  z-index: 999;
+  position: fixed;
+  right:0;
+}
+
+.corn {
+  width: 19.45vw;
+  height: 19.45vw;
+  transform: translate(50%,-50%) rotate(45deg) ;
+  background-color: #000;
+}
+
+.info-close img {
+  width: 35%;
+  position: absolute;
+  right: 3%;
+  top:3%;
+}
+
+.close-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+body .canvasContainer {
+    background-color: #FFF;
+    width: 1090px;
+    height: 1800px;
+    margin: 0 auto;
+    position: relative;
+    /* display: none; */
+    /* position: absolute; */
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.55);
+
+}
+
+body .canvasContainer>* {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+body .canvasContainer canvas {
+    z-index: 1
+}
+
+body .canvasContainer video {
+    z-index: 2;
+    display: none
+}
+
+
+.testBTN{
+  position: absolute;
+  background-color: #FFF;
+  opacity: 0.5;
+  display: block;
+  z-index: 990;
+  width: 80px;
+  height: 80px;
+  top:0;
+  left: 0;
+}
+
+.bg {
+  font-size: 0;
+  position: relative;
+  width:100%;
+  //background: url("../img/info-bg.png") center top no-repeat;
+  background-size: 100%;
+  top:50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.tt{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.info-form {
+  position: relative;
+  width: 86%;
+  height: 120.36vw;
+  /*padding-top:53%;
+  padding-bottom: 32%;*/
+  left:7%;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+  padding-top: 57%;
+  display: block;
+}
+
+.name-title,.phone-title,.email-title,.shop-title {
+  display: inline-block;
+  vertical-align: middle;
+  width:20.64%;
+  
+  margin-top: 2%;
+}
+
+.name-input,.phone-input,.email-input,.shop-select,.done-check span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 79.3%;
+  margin-top: 2%;
+}
+
+input {
+  width:100%;
+}
+
+input,select,.done-check span {
+      -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  line-height: 50px;
+  height: 50px;
+  font-size: 25px;
+}
+
+#city{
+  width: 37%;
+  margin-right:3%;
+}
+
+#shop {
+  width:60%;
+}
+
+.agree ,.note{
+  text-align: right;
+  font-size: 19px;
+}
+
+.agree {
+  margin-top: 3%;
+  color:#666;
+}
+
+.agree input {
+  width: 5%;
+  margin:0;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.agree span {
+  vertical-align: middle;
+}
+
+.agree span:nth-child(4) {
+  color:#ff0000;
+}
+
+.agree span a {
+  text-decoration: none;
+  color:#666;
+  line-height: 1.3;
+  border-bottom: 1px solid #666;
+}
+
+.info-btn {
+  cursor: pointer;
+  width: 100%;
+  margin-top: 3%;
+}
+
+
+.done-check {
+  font-size: 0;
+  *position: relative;
+  width: 100%;
+  padding-top: 57%;
+  display: none;
+}
+
+.done-btn {
+  width: 100%;
+  font-size: 0;
+  position: absolute;
+  bottom:2%;
+}
+
+.back-btn,.ok-btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 49.5%;
+}
+
+.back-btn {
+  margin-right:1%;
+}
+
+
+
+.prod {
+  z-index: 700;
+  position: relative;
+  margin-top: 20%;
+}
+
+.prod-bg{
+  position: relative;
+  width: 100%;
+}
+
+.prod-bg2 {
+  position: absolute;
+  width:100%;
+  top: -25%;
+}
+
+.prod-title {
+  position: absolute;
+  top: -6%;
+}
+.prod-3d {
+  overflow: hidden;
+  position: absolute;
+  width:100%;
+  top: 6%;
+}
+.prod-oil {
+  overflow: hidden;
+  position: absolute;
+  width:100%;
+  top: 50%
+}
+
+.blog {
+  position: relative;
+}
+
+.run-p {
+  position: absolute;
+  font-size: 0;
+  /*top:-40%;*/
+  bottom: 9.5%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-run {
+  /*transform: translateX(-20%);*/
+  width: 250%;
+  
+}
+
+.blog-bg {
+  position: relative;
+  font-size: 0;
+  width: 100%;
+}
+
+.blog-title {
+  position: absolute;
+  top:0;
+}
+
+.blog-slide {
+  position: absolute;
+  width:100%;
+  height: auto;
+  bottom: 2%;
+  z-index: 50;
+}
+
+#myDiv {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: red;
+  }
+
+  #pic1 td {
+    width: 100%;
+  }
+  
+#myDiv img {
+  border: 1px solid;
+  width: 250%;
+}
+
+
+
+
+
+@media (max-width: 720px){
+  input, select, .done-check span {
+    line-height: 40px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .agree, .note {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 640px){
+  input, select, .done-check span {
+    line-height: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+
+  .agree, .note {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 530px){
+  input, select, .done-check span {
+    line-height: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .agree, .note {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px){
+  input, select, .done-check span {
+    line-height: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .agree, .note {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 385px){
+  input, select, .done-check span {
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .agree, .note {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 350px){
+  input, select, .done-check span {
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .agree, .note {
+    font-size: 8px;
+  }
+}
+
+
+

@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #000; 
+}
+
+.change {
+  position: relative;
+  width: 100%;
+  background-color: #000; 
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  max-width: 236px;
+  max-height: 75px;
+}
+.logo img {
+  width: 70%;
+  height: auto;
+}
+
+.change-inner {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+  max-height: inherit;
+  padding-bottom: 7%;
+}
+
+.prod-title {
+  max-width: 960px;
+}
+.prod-title img {
+  width: 100%;
+  height: auto;
+}
+
+.change-title {
+  position: relative;
+  margin: 0 auto;
+  max-width: 899px;
+  max-height: 124px;
+  padding-top: 77%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.change-title img {
+  width: 100%;
+  height: auto;
+}
+
+.change-info {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 6%;
+  font-size:21px;
+}
+.change-info div {
+  padding-left: 13%;
+  margin-bottom: 3%;
+}
+.change-info img {
+  width: 33%;
+  max-width:266px;
+  margin-right: 3%;
+  vertical-align:middle;
+}
+
+.change-info span {
+  color: #fff;
+  vertical-align: middle;
+  //font-family: 'Noto Sans TC', sans-serif;
+}
+.change-info i {
+  color: #594a41;
+  vertical-align: middle;
+}
+
+.change-name-title, .change-phone-title, .change-email-title, .change-shop-title {
+  display: block;
+}
+
+.change-down {
+  position: relative;
+  padding-top:3%;
+}
+
+.change-word {
+  position: relative;
+  max-width: 387px;
+  max-height: 105px;
+  padding-left: 7%;
+  padding-right: 10%;
+}
+.change-word img {
+  width: 100%;
+  height: auto;
+}
+
+.change-btn {
+  position: relative;
+  width: 74%;
+  margin: 0 auto;
+}
+.change-btn img {
+  width: 100%;
+  height: auto;
+}
+
+.change-ok-btn {
+  position: relative;
+  display: none;
+  /*max-width: 197px;
+  max-height: 226px;
+  padding-top: 11%;*/
+  width: 74%;
+  margin:0 auto;
+}
+.change-ok-btn img {
+  width: 100%;
+  height: auto;
+}
+
+.tip {
+  width: 74%;
+  margin: 0 auto;
+}
+
+.tip img {
+  width: 100%;
+}
+
+
+
+
+.expired {
+  position: relative;
+  width: 100%;
+  background-color: #000; 
+}
+
+.expired-inner {
+  position: relative;
+  margin: 0 auto 7%;
+  max-width: 960px;
+  max-height: inherit;
+}
+
+.expired-title {
+  width: 50%;
+  margin:5% auto;
+}
+
+.expired-title img {
+  width: 100%;
+}
+
+.re-btn {
+  position:relative;
+  width: 74%;
+  margin: 0 auto;
+  background-color: #d3003b;
+  height:51px;
+}
+
+.re-btn a {
+  text-align: center;
+  display: block;
+  font-size: 21px;
+  color:#fff;
+  line-height: 51px;
+}
+
+
+
+
